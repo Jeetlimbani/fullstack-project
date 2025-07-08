@@ -4,9 +4,13 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
+  build: {
+    outDir: 'dist', // Ensure Vite outputs to dist folder
+  },
   server: {
     hmr: {
-      overlay: false, // Disable the error overlay
+      overlay: false,
     },
   },
+  base: '/', // Ensures proper routing for Netlify
 });
