@@ -2,7 +2,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { CssBaseline, ThemeProvider, createTheme, Box } from '@mui/material';
-import CircularProgress from '@mui/material/CircularProgress/index.js';
+import CircularProgress from '@mui/material/CircularProgress';
 import { AuthProvider, useAuth } from '../context/AuthContext.jsx';
 import SignUpPage from '../pages/SignUpPage.jsx';
 import SignInPage from '../pages/SignInPage.jsx';
